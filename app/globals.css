@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Festival Sports - Dark base with fire orange accent */
+  --background: oklch(0.10 0.01 260);
+  --foreground: oklch(0.97 0.005 80);
+  --card: oklch(0.14 0.015 260);
+  --card-foreground: oklch(0.97 0.005 80);
+  --popover: oklch(0.14 0.015 260);
+  --popover-foreground: oklch(0.97 0.005 80);
+  --primary: oklch(0.68 0.22 42);
+  --primary-foreground: oklch(0.10 0.01 260);
+  --secondary: oklch(0.20 0.02 260);
+  --secondary-foreground: oklch(0.97 0.005 80);
+  --muted: oklch(0.18 0.015 260);
+  --muted-foreground: oklch(0.60 0.01 260);
+  --accent: oklch(0.75 0.18 80);
+  --accent-foreground: oklch(0.10 0.01 260);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.97 0.005 80);
+  --border: oklch(0.22 0.02 260);
+  --input: oklch(0.20 0.02 260);
+  --ring: oklch(0.68 0.22 42);
+  --radius: 0.5rem;
+
+  /* Festival extra tokens */
+  --festival-orange: oklch(0.68 0.22 42);
+  --festival-gold: oklch(0.75 0.18 80);
+  --festival-dark: oklch(0.10 0.01 260);
+  --festival-surface: oklch(0.14 0.015 260);
+  --festival-muted: oklch(0.18 0.015 260);
+  --festival-text: oklch(0.97 0.005 80);
+  --festival-text-muted: oklch(0.60 0.01 260);
+}
+
+@theme inline {
+  --font-sans: var(--font-barlow);
+  --font-display: var(--font-oswald);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-festival-orange: var(--festival-orange);
+  --color-festival-gold: var(--festival-gold);
+  --color-festival-dark: var(--festival-dark);
+  --color-festival-surface: var(--festival-surface);
+  --color-festival-muted: var(--festival-muted);
+  --color-festival-text: var(--festival-text);
+  --color-festival-text-muted: var(--festival-text-muted);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), var(--font-sans);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+/* Festival marquee ticker */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Diagonal stripe pattern */
+.festival-stripe {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    oklch(1 0 0 / 0.03) 8px,
+    oklch(1 0 0 / 0.03) 16px
+  );
+}
+
+/* Neon glow effect on primary */
+.neon-glow {
+  text-shadow: 0 0 20px oklch(0.68 0.22 42 / 0.8), 0 0 40px oklch(0.68 0.22 42 / 0.4);
+}
+
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px oklch(0.68 0.22 42 / 0.25);
+}
