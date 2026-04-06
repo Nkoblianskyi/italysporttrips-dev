@@ -183,11 +183,10 @@ export default function TourCatalogPage() {
                 <button
                   key={c.value}
                   onClick={() => setActiveCategory(c.value)}
-                  className={`text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-sm border transition-colors ${
-                    activeCategory === c.value
+                  className={`text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-sm border transition-colors ${activeCategory === c.value
                       ? 'bg-primary text-primary-foreground border-primary'
                       : 'border-border text-muted-foreground hover:border-primary hover:text-primary'
-                  }`}
+                    }`}
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {c.label}

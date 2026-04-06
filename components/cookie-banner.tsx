@@ -34,6 +34,7 @@ export default function CookieBanner() {
       className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-sm z-50 bg-festival-surface border border-primary/40 rounded-sm shadow-2xl p-5"
     >
       <div className="flex items-start gap-3 mb-4">
+        <Cookie className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
         <div>
           <p
             className="text-sm font-bold tracking-wider uppercase text-foreground mb-1"

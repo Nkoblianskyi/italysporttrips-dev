@@ -87,8 +87,7 @@ function ContactFormContent() {
   }
 
   const inputClass = (name: string) =>
-    `w-full bg-input border ${
-      errors[name] ? 'border-destructive' : 'border-border'
+    `w-full bg-input border ${errors[name] ? 'border-destructive' : 'border-border'
     } rounded-sm px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors`
 
   return (
