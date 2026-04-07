@@ -9,51 +9,51 @@ import CookieBanner from '@/components/cookie-banner'
 
 const tips = [
   {
-    title: 'Arriva in anticipo',
-    desc: "Presentarsi allo stadio o all'arena almeno 1 ora prima garantisce di trovare i migliori posti, godersi l'atmosfera pre-gara e fare acquisti al merchandise.",
+    title: 'Parti con calma',
+    desc: 'Arriva al punto di ritrovo con un buon margine: briefing, controllo attrezzatura e un caffè insieme rendono la partenza più serena.',
   },
   {
-    title: 'Scarica i biglietti offline',
-    desc: 'Salva sempre i biglietti digitali offline prima di partire. La connessione mobile negli stadi affollati può essere lenta o assente.',
+    title: 'Documenti e contatti',
+    desc: 'Tieni offline documenti, assicurazione e numeri utili. In montagna la copertura può essere variabile e conviene essere pronti.',
   },
   {
     title: 'Zaino compatto e leggero',
-    desc: 'Molti impianti sportivi europei limitano le dimensioni dei bagagli. Porta uno zaino sottile e controlla sempre il regolamento dell\'evento.',
+    desc: 'Viaggiare leggeri fa la differenza: uno zaino essenziale, strati tecnici e un antipioggia sono spesso più utili di mille extra.',
   },
   {
-    title: 'Usa i trasporti pubblici',
-    desc: 'Il traffico attorno agli impianti sportivi è caotico. Treni, metro e bus sono la scelta più smart — spesso con navette dedicate agli eventi.',
+    title: 'Trasferimenti semplici',
+    desc: 'Se puoi, usa treni e bus: meno stress, più puntualità e zero pensieri su parcheggi o ZTL.',
   },
   {
     title: 'Carta di credito sempre con te',
-    desc: "Molti food court e store ufficiali accettano solo pagamenti cashless. Prepara una carta contactless prima di partire.",
+    desc: 'In rifugi e piccoli borghi non sempre c’è ATM vicino. Porta una carta contactless e un po’ di contanti per emergenze.',
   },
   {
     title: 'Controlla il meteo',
-    desc: 'Gli eventi outdoor come il ciclismo e il motorsport si svolgono con qualsiasi tempo. Porta sempre un impermeabile leggero e creme solari.',
+    desc: 'In quota il tempo cambia in fretta. Porta sempre uno strato caldo, un impermeabile leggero e protezione solare.',
   },
 ]
 
 const faqs = [
   {
-    q: 'Come posso prenotare un tour sportivo?',
-    a: "Puoi contattarci tramite il modulo sulla pagina Contatti oppure via email. Un nostro consulente ti risponderà entro 24 ore lavorative con disponibilità e preventivo personalizzato.",
+    q: 'Come posso prenotare un tour?',
+    a: 'Puoi contattarci tramite il modulo nella pagina Contatti oppure via email. Ti rispondiamo entro 24 ore lavorative con disponibilità e proposta su misura.',
   },
   {
-    q: 'I biglietti per gli eventi sono inclusi nel prezzo?',
-    a: 'Sì, ogni pacchetto include i biglietti per gli eventi sportivi indicati. Trova la lista completa di cosa è incluso nella pagina di ogni singolo tour.',
+    q: 'Cosa è incluso nel prezzo?',
+    a: 'Dipende dal tour: nella pagina di ogni viaggio trovi la lista completa di inclusioni/esclusioni (alloggi, guide, assistenza, eventuali noleggi e servizi logistici).',
   },
   {
-    q: "Cosa succede se l'evento viene annullato o posticipato?",
-    a: "In caso di annullamento dell'evento principale, ti offriamo piena flessibilità: possibilità di rimandare il tour alla data riprogrammata o rimborso completo entro 14 giorni.",
+    q: 'Cosa succede in caso di maltempo?',
+    a: 'La sicurezza viene prima di tutto. Se serve, adattiamo itinerario e attività (o riprogrammiamo) mantenendo la migliore esperienza possibile in base alle condizioni.',
   },
   {
     q: 'I tour sono adatti alle famiglie con bambini?',
     a: "Assolutamente sì! I tour con difficoltà 'Facile' sono perfetti per famiglie. Basta indicarcelo in fase di prenotazione e adatteremo il programma alle esigenze dei vostri bambini.",
   },
   {
-    q: "È necessaria un'assicurazione di viaggio?",
-    a: "Raccomandiamo sempre di stipulare un'assicurazione di viaggio personale. Per alcuni tour avanzati come il ciclismo alpino, è obbligatoria. Possiamo suggerirvi i partner assicurativi con cui collaboriamo.",
+    q: "È necessaria un'assicurazione?",
+    a: 'Consigliamo sempre un’assicurazione viaggio personale. Per alcuni itinerari in quota o più tecnici può essere richiesta: te lo indichiamo chiaramente prima della conferma.',
   },
   {
     q: 'Posso personalizzare un tour?',
@@ -72,7 +72,7 @@ export default function HomePage() {
         <section className="relative min-h-[70vh] flex items-center overflow-hidden">
           <Image
             src="/images/hero-bg.jpg"
-            alt="Tour sportivi in Europa"
+            alt="Tour outdoor e avventure in Europa"
             fill
             priority
             className="object-cover"
@@ -87,18 +87,18 @@ export default function HomePage() {
                 className="inline-block text-xs font-bold tracking-widest uppercase text-primary border border-primary/40 px-3 py-1 rounded-sm mb-5"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Tour Sportivi Premium
+                Tour Outdoor d’Autore
               </span>
               <h1
                 className="text-4xl md:text-6xl font-bold uppercase tracking-wide text-foreground leading-none mb-4 text-balance"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Vivi lo sport{' '}
-                <span className="text-primary neon-glow">dal vivo</span>{' '}
+                Vivi la montagna{' '}
+                <span className="text-primary neon-glow">da protagonista</span>{' '}
                 in Italia e in Europa
               </h1>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-8 max-w-lg">
-                Calcio, tennis, ciclismo e molto altro. Pacchetti tutto compreso per vivere i grandi eventi sportivi europei con un&apos;organizzazione impeccabile.
+                Tour guidati e curati nei dettagli: trekking in quota, cicloviaggi panoramici e moto tour tra passi alpini. Piccoli gruppi, ritmi giusti, esperienze autentiche.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
@@ -125,7 +125,7 @@ export default function HomePage() {
             <div className="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-around gap-4">
               {[
                 { num: '500+', label: 'Clienti soddisfatti' },
-                { num: '6', label: 'Sport disponibili' },
+                { num: '6', label: 'Tipi di esperienze' },
                 { num: '12', label: 'Paesi europei' },
                 { num: '4.9', label: 'Rating medio' },
               ].map((s) => (
@@ -161,15 +161,15 @@ export default function HomePage() {
                 className="text-3xl md:text-4xl font-bold uppercase tracking-wide text-foreground mb-4 text-balance"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                La tua passione sportiva, la nostra missione
+                La tua avventura, la nostra missione
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Italy Sport Trips nasce dalla passione per lo sport e per i viaggi. Organizziamo tour sportivi esclusivi in Italia e in tutta Europa, curando ogni dettaglio: dai biglietti all&apos;alloggio, dai trasferimenti alle esperienze uniche dietro le quinte.
+                Italy Trips nasce dalla passione per i viaggi attivi e per la natura. Organizziamo tour outdoor in Italia e in Europa, curando ogni dettaglio: itinerari, guide, alloggi, trasferimenti e piccoli momenti che rendono il viaggio davvero tuo.
               </p>
               <ul className="space-y-2 mb-8">
                 {[
-                  'Pacchetti tutto compreso con biglietti garantiti',
-                  'Guide esperte e appassionate di sport',
+                  'Itinerari curati e ritmi equilibrati',
+                  'Guide esperte e locali selezionati',
                   'Gruppi piccoli per un servizio personale',
                   'Supporto 24/7 durante il tour',
                 ].map((item) => (
@@ -267,9 +267,9 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid sm:grid-cols-3 gap-8 text-center">
               {[
-                { icon: <Star className="w-8 h-8" />, title: 'Qualità garantita', desc: 'Solo i migliori hotel, biglietti in prima fila e servizi premium' },
-                { icon: <Globe className="w-8 h-8" />, title: 'Tutta Europa', desc: "Oltre 12 paesi europei con tour in partenza tutto l'anno" },
-                { icon: <Shield className="w-8 h-8" />, title: 'Sicurezza totale', desc: 'Rimborso completo in caso di annullamento evento garantito' },
+                { icon: <Star className="w-8 h-8" />, title: 'Qualità garantita', desc: 'Strutture selezionate, guide affidabili e logistica senza stress' },
+                { icon: <Globe className="w-8 h-8" />, title: 'Tutta Europa', desc: "Itinerari tra Alpi, coste e parchi: nuove partenze durante l'anno" },
+                { icon: <Shield className="w-8 h-8" />, title: 'Sicurezza prima di tutto', desc: 'Briefing, assistenza e adattamento itinerario in base alle condizioni' },
               ].map((item) => (
                 <div key={item.title} className="text-primary-foreground">
                   <div className="flex justify-center mb-3">{item.icon}</div>
@@ -329,10 +329,10 @@ export default function HomePage() {
               className="text-3xl md:text-4xl font-bold uppercase tracking-wide text-foreground mb-4 text-balance"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Pronto per la tua prossima avventura sportiva?
+              Pronto per la tua prossima avventura?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Contattaci oggi e costruiamo insieme il tuo tour sportivo perfetto in Italia o in Europa.
+              Contattaci oggi e costruiamo insieme il tuo tour perfetto in Italia o in Europa.
             </p>
             <Link
               href="/contatti"

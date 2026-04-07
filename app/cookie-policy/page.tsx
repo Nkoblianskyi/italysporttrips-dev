@@ -4,7 +4,7 @@ import CookieBanner from '@/components/cookie-banner'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy – Italy Sport Trips',
+  title: 'Cookie Policy – Italy Trips',
   description: "Informativa sull'utilizzo dei cookie sul sito italysporttrips.com.",
 }
 
@@ -92,7 +92,7 @@ export default function CookiePolicyPage() {
             <div className="bg-primary/10 border border-primary/30 rounded-sm p-5">
               <p className="text-foreground font-medium">
                 Questo documento descrive la Cookie Policy di{' '}
-                <strong>Italy Sport Trips</strong> (dominio: italysporttrips.com), gestito da{' '}
+                <strong>Italy Trips</strong> (dominio: italysporttrips.com), gestito da{' '}
                 <strong>K.C. NTOMATA LIMITED</strong>, con sede in Stylianou Lena, 24 Christiana Court,
                 Flat/Office 202, Strovolos, 2019 Nicosia, Cyprus.
               </p>

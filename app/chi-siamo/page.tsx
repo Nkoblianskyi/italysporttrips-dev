@@ -7,20 +7,20 @@ import CookieBanner from '@/components/cookie-banner'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Chi Siamo – Italy Sport Trips',
-  description: 'Scopri la storia di Italy Sport Trips: la nostra missione, il nostro team e la passione per i tour sportivi in Italia e in Europa.',
+  title: 'Chi Siamo – Italy Trips',
+  description: 'Scopri la storia di Italy Trips: la nostra missione, il nostro team e la passione per i tour outdoor in Italia e in Europa.',
 }
 
 const values = [
   {
     icon: <Trophy className="w-6 h-6" />,
     title: 'Eccellenza',
-    desc: "Ogni tour viene curato nei minimi dettagli. Dal biglietto all'hotel, ci assicuriamo che ogni aspetto del viaggio sia all'altezza delle aspettative.",
+    desc: "Ogni tour viene curato nei minimi dettagli. Dall’itinerario agli alloggi, ci assicuriamo che ogni aspetto del viaggio sia all’altezza delle aspettative.",
   },
   {
     icon: <Heart className="w-6 h-6" />,
     title: 'Passione',
-    desc: 'Siamo tifosi prima ancora che organizzatori. Questa passione genuina per lo sport si riflette nella qualità e nell\'autenticità di ogni tour che proponiamo.',
+    desc: 'Amiamo la natura e i viaggi attivi. Questa passione si riflette nella qualità e nell’autenticità di ogni esperienza che proponiamo.',
   },
   {
     icon: <Target className="w-6 h-6" />,
@@ -30,22 +30,22 @@ const values = [
   {
     icon: <Globe className="w-6 h-6" />,
     title: 'Copertura Europea',
-    desc: 'Dalla futbal parigiano al ciclismo, dal tennis parigino all\'atletica berlinese: copriamo tutti i principali eventi sportivi europei.',
+    desc: 'Dalle Alpi alle coste del Mediterraneo: creiamo itinerari outdoor in tutta Europa, scegliendo i luoghi più belli e le stagioni migliori.',
   },
 ]
 
 const team = [
   {
     role: 'Fondatore & Direttore',
-    bio: 'Appassionato di sport da sempre, ha trasformato la sua passione per i viaggi sportivi in un progetto professionale dopo aver visitato oltre 30 eventi sportivi in Europa.',
+    bio: 'Viaggiatore instancabile, ha trasformato la passione per la montagna e le strade panoramiche in un progetto professionale dopo anni di itinerari in Europa.',
   },
   {
     role: 'Responsabile Tour Italia',
-    bio: 'Esperta di calcio e motorsport italiano. Gestisce i rapporti con i fornitori locali e garantisce esperienze autentiche in tutte le città italiane.',
+    bio: 'Specialista di itinerari italiani tra passi alpini, borghi e parchi naturali. Cura fornitori locali e garantisce esperienze autentiche sul territorio.',
   },
   {
     role: 'Coordinatrice Tour Europa',
-    bio: 'Polivalente e multilingue, coordina i tour in Francia, Spagna e Germania con una cura maniacale per i dettagli logistici.',
+    bio: 'Polivalente e multilingue, coordina i tour in Francia, Spagna e Germania con grande attenzione ai dettagli logistici.',
   },
 ]
 
@@ -71,7 +71,7 @@ export default function AboutPage() {
               Chi Siamo
             </h1>
             <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Italy Sport Trips nasce dall&apos;incontro tra la passione per lo sport e l&apos;arte di organizzare viaggi indimenticabili.
+              Italy Trips nasce dall&apos;incontro tra la passione per la natura e l&apos;arte di organizzare viaggi indimenticabili.
             </p>
           </div>
         </section>
@@ -90,23 +90,23 @@ export default function AboutPage() {
                 className="text-3xl font-bold uppercase tracking-wide text-foreground mb-5 text-balance"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Portarti al cuore dell&apos;azione sportiva
+                Portarti dentro il viaggio
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Italy Sport Trips è un servizio di tour sportivi fondato con una missione chiara: rendere accessibile l&apos;emozione degli eventi sportivi dal vivo, eliminando la complessità organizzativa e massimizzando il piacere dell&apos;esperienza.
+                  Italy Trips è un servizio di tour outdoor fondato con una missione chiara: rendere accessibili esperienze autentiche in montagna e su strada, eliminando la complessità organizzativa e lasciandoti solo il bello del viaggio.
                 </p>
                 <p>
-                  Sappiamo quanto possa essere complicato organizzare un viaggio per un grande evento sportivo: trovare biglietti autentici, prenotare un hotel nelle vicinanze, organizzare i trasferimenti. Noi ci occupiamo di tutto questo, così tu puoi concentrarti solo sulla gioia dello sport.
+                  Sappiamo quanto possa essere complicato organizzare un itinerario ben fatto: scegliere i percorsi giusti, incastrare tappe e trasferimenti, trovare alloggi comodi e affidabili. Noi ci occupiamo di tutto, così tu puoi concentrarti solo sull’esperienza.
                 </p>
                 <p>
-                  Con oltre 10 anni di esperienza nel settore dei viaggi sportivi, abbiamo portato centinaia di appassionati italiani a vivere emozioni uniche in Italia e in tutta Europa.
+                  Con oltre 10 anni di esperienza nell’organizzazione di viaggi, abbiamo accompagnato centinaia di persone in esperienze uniche in Italia e in tutta Europa.
                 </p>
               </div>
             </div>
             <div className="relative">
               <div className="relative rounded-sm overflow-hidden aspect-square">
-                <Image src="/images/about-team.jpg" alt="Il team Italy Sport Trips" fill className="object-cover" />
+                <Image src="/images/about-team.jpg" alt="Il team Italy Trips" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-5 -left-5 bg-festival-surface border border-border p-5 rounded-sm shadow-xl max-w-xs">
                 <p
@@ -204,7 +204,7 @@ export default function AboutPage() {
               Vieni a far parte della nostra community
             </h2>
             <p className="text-primary-foreground/80 leading-relaxed mb-8">
-              Unisciti a centinaia di appassionati che hanno già vissuto esperienze sportive indimenticabili con noi.
+              Unisciti a centinaia di viaggiatori che hanno già vissuto esperienze indimenticabili con noi.
             </p>
             <Link
               href="/contatti"

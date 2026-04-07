@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const tour = tours.find((t) => t.slug === slug)
   if (!tour) return {}
   return {
-    title: `${tour.title} – Italy Sport Trips`,
+    title: `${tour.title} – Italy Trips`,
     description: tour.description.slice(0, 155),
   }
 }
@@ -217,7 +217,7 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                   <div className="bg-festival-muted rounded-sm p-3 flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                     <p className="text-xs text-muted-foreground leading-relaxed">
-                      Rimborso completo garantito in caso di annullamento dell&apos;evento
+                      Itinerario flessibile: in caso di meteo avverso o condizioni non sicure, adattiamo tappe e attività.
                     </p>
                   </div>
                 </div>

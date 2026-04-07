@@ -160,12 +160,15 @@ function ContactFormContent() {
             onChange={(e) => setForm((f) => ({ ...f, tour: e.target.value }))}
           >
             <option value="">Seleziona un tour...</option>
-            <option value="grande-festa-del-calcio-roma">Grande Festa del Calcio – Roma</option>
-            <option value="torneo-tennis-parigi">Torneo Tennis Parigi</option>
-            <option value="gran-premio-monza">Gran Premio di Monza</option>
-            <option value="tour-ciclismo-alpi">Tour Ciclismo sulle Alpi</option>
-            <option value="basketball-madrid">Basketball Night Madrid</option>
-            <option value="atletica-berlino">Campionati Europei di Atletica – Berlino</option>
+            <option value="velo-toscana">Pedalando tra i Vigneti della Toscana</option>
+            <option value="moto-dolomiti">Moto Tour tra le Dolomiti</option>
+            <option value="trekking-alpi">Alta Via delle Alpi — Trekking d’Autore</option>
+            <option value="kayak-sicilia">Kayak d’Altura lungo la Costa Siciliana</option>
+            <option value="sci-fondo-abruzzo">Sci di Fondo nei Boschi d’Abruzzo</option>
+            <option value="velo-costa-amalfi">Cicloturismo sulla Costiera Amalfitana</option>
+            <option value="arrampicata-sardegna">Arrampicata sulle Falesie di Sardegna</option>
+            <option value="moto-balcani">Moto Tour attraverso i Balcani</option>
+            <option value="velo-provenza">Velo Tour in Provenza tra Lavanda e Vento</option>
             <option value="tour-personalizzato">Tour personalizzato</option>
           </select>
         </div>
@@ -248,7 +251,7 @@ export default function ContactPage() {
               Contattaci
             </h1>
             <p className="text-muted-foreground max-w-xl leading-relaxed">
-              Pronto a pianificare la tua prossima avventura sportiva? Scrivici e ti risponderemo entro 24 ore con un preventivo personalizzato.
+              Pronto a pianificare la tua prossima avventura? Scrivici e ti risponderemo entro 24 ore con una proposta personalizzata.
             </p>
           </div>
         </section>

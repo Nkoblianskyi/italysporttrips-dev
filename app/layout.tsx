@@ -15,16 +15,16 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Italy Sport Trips – Tour Sportivi in Italia e in Europa',
+  title: 'Italy Trips – Tour d’Autore in Italia e in Europa',
   description:
-    'Scopri i migliori tour sportivi in Italia e in Europa. Calcio, tennis, ciclismo e molto altro. Prenota la tua avventura sportiva con Italy Sport Trips.',
-  keywords: 'tour sportivi, viaggi sportivi, calcio, tennis,ciclismo, Italia, Europa',
-  authors: [{ name: 'Italy Sport Trips' }],
+    'Tour d’autore in Italia e in Europa: montagne, strade panoramiche e natura. Piccoli gruppi, guide selezionate e organizzazione senza stress.',
+  keywords: 'tour d’autore, viaggi outdoor, trekking, cicloviaggi, moto tour, montagne, Italia, Europa',
+  authors: [{ name: 'Italy Trips' }],
   openGraph: {
-    title: 'Italy Sport Trips – Tour Sportivi in Italia e in Europa',
-    description: 'Scopri i migliori tour sportivi in Italia e in Europa.',
+    title: 'Italy Trips – Tour d’Autore in Italia e in Europa',
+    description: 'Tour d’autore in Italia e in Europa: natura, montagne e strade panoramiche.',
     url: 'https://italysporttrips.com',
-    siteName: 'Italy Sport Trips',
+    siteName: 'Italy Trips',
     locale: 'it_IT',
     type: 'website',
   },

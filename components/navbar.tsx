@@ -25,7 +25,7 @@ export default function Navbar() {
             className="text-lg font-bold tracking-widest uppercase text-foreground"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            Italy<span className="text-primary">Sport</span>Trips
+            Italy<span className="text-primary">Trips</span>
           </span>
         </Link>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
             className="bg-primary text-primary-foreground text-sm font-bold tracking-widest uppercase px-5 py-2 rounded-sm hover:bg-accent transition-colors"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            Prenota
+            Richiedi
           </Link>
         </nav>
 
@@ -82,7 +82,7 @@ export default function Navbar() {
                 style={{ fontFamily: 'var(--font-display)' }}
                 onClick={() => setOpen(false)}
               >
-                Prenota ora
+                Richiedi ora
               </Link>
             </div>
           </nav>

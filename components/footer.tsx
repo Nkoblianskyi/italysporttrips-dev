@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex animate-marquee whitespace-nowrap w-max">
           {Array.from({ length: 10 }).map((_, i) => (
             <span key={i} className="text-xs font-bold tracking-widest uppercase text-primary-foreground mx-6" style={{ fontFamily: 'var(--font-display)' }}>
-              TOUR SPORTIVI &bull; ITALIA &bull; EUROPA &bull; CALCIO &bull; TENNIS &bull; MOTORSPORT &bull; CICLISMO &bull; BASKET &bull; ATLETICA &bull;
+              TOUR OUTDOOR &bull; ITALIA &bull; EUROPA &bull; MONTAGNA &bull; TREKKING &bull; MOTO TOUR &bull; CICLOVIAGGI &bull; KAYAK &bull; ARRAMPICATA &bull;
             </span>
           ))}
         </div>
@@ -27,11 +27,11 @@ export default function Footer() {
                 className="text-lg font-bold tracking-widest uppercase text-foreground"
                 style={{ fontFamily: 'var(--font-display)' }}
               >
-                Italy<span className="text-primary">Sport</span>Trips
+                Italy<span className="text-primary">Trips</span>
               </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Tour sportivi esclusivi in Italia e in tutta Europa. Vivi la passione dello sport dal vivo con i migliori pacchetti di viaggio.
+              Tour outdoor in Italia e in tutta Europa. Vivi la montagna e la strada con itinerari curati, piccoli gruppi e un’organizzazione senza stress.
             </p>
             <div className="flex items-start gap-2 text-sm text-muted-foreground">
               <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: '/', label: 'Home' },
-                { href: '/tour', label: 'Tour Sportivi' },
+                  { href: '/tour', label: 'Tour' },
                 { href: '/chi-siamo', label: 'Chi Siamo' },
                 { href: '/contatti', label: 'Contatti' },
                 { href: '/privacy-policy', label: 'Privacy Policy' },
@@ -96,7 +96,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Italy Sport Trips – K.C. NTOMATA LIMITED. Tutti i diritti riservati.
+            &copy; {new Date().getFullYear()} Italy Trips – K.C. NTOMATA LIMITED. Tutti i diritti riservati.
           </p>
           <p className="text-xs text-muted-foreground flex gap-4">
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

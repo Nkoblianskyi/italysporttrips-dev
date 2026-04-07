@@ -66,22 +66,22 @@ export default function TourCatalogPage() {
               className="text-4xl md:text-5xl font-bold uppercase tracking-wide text-foreground mb-3 text-balance"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Tutti i Tour Sportivi
+              Tutti i Tour
             </h1>
             <p className="text-muted-foreground max-w-xl leading-relaxed">
-              Esplora la nostra selezione di tour sportivi in Italia e in Europa. Filtra per sport, paese o prezzo e trova l&apos;esperienza perfetta per te.
+              Esplora la nostra selezione di tour outdoor in Italia e in Europa. Filtra per esperienza o paese e trova il viaggio perfetto per te.
             </p>
           </div>
 
-          {/* Scoreboard decoration */}
+          {/* Decoration */}
           <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden lg:grid grid-cols-3 gap-px bg-border/40 border border-border/60 rounded-sm overflow-hidden">
-            {['CAL', 'TEN', 'MOT', 'CIC', 'BAS', 'ATL'].map((cat) => (
-              <div key={cat} className="bg-festival-muted px-4 py-3 text-center">
+            {['ALP', 'BIK', 'MOT', 'TRK', 'SEA', 'CLM'].map((tag) => (
+              <div key={tag} className="bg-festival-muted px-4 py-3 text-center">
                 <span
                   className="text-xs font-bold tracking-widest uppercase text-primary"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
-                  {cat}
+                  {tag}
                 </span>
               </div>
             ))}
@@ -126,7 +126,7 @@ export default function TourCatalogPage() {
                   value={activeCategory}
                   onChange={(e) => setActiveCategory(e.target.value)}
                   className={inputClass}
-                  aria-label="Filtra per sport"
+                  aria-label="Filtra per esperienza"
                 >
                   {categories.map((c) => (
                     <option key={c.value} value={c.value}>{c.label}</option>

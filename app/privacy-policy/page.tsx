@@ -4,7 +4,7 @@ import CookieBanner from '@/components/cookie-banner'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy – Italy Sport Trips',
+  title: 'Privacy Policy – Italy Trips',
   description: 'Informativa sul trattamento dei dati personali di italysporttrips.com ai sensi del GDPR.',
 }
 
