@@ -30,7 +30,7 @@ const values = [
   {
     icon: <Globe className="w-6 h-6" />,
     title: 'Copertura Europea',
-    desc: 'Dalla Serie A alla Formula 1, dal tennis parigino all\'atletica berlinese: copriamo tutti i principali eventi sportivi europei.',
+    desc: 'Dalla futbal parigiano al ciclismo, dal tennis parigino all\'atletica berlinese: copriamo tutti i principali eventi sportivi europei.',
   },
 ]
 

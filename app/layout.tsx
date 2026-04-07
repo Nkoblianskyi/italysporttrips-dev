@@ -17,8 +17,8 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   title: 'Italy Sport Trips – Tour Sportivi in Italia e in Europa',
   description:
-    'Scopri i migliori tour sportivi in Italia e in Europa. Calcio, tennis, Formula 1, ciclismo e molto altro. Prenota la tua avventura sportiva con Italy Sport Trips.',
-  keywords: 'tour sportivi, viaggi sportivi, calcio, tennis, formula 1, ciclismo, Italia, Europa',
+    'Scopri i migliori tour sportivi in Italia e in Europa. Calcio, tennis, ciclismo e molto altro. Prenota la tua avventura sportiva con Italy Sport Trips.',
+  keywords: 'tour sportivi, viaggi sportivi, calcio, tennis,ciclismo, Italia, Europa',
   authors: [{ name: 'Italy Sport Trips' }],
   openGraph: {
     title: 'Italy Sport Trips – Tour Sportivi in Italia e in Europa',

@@ -98,7 +98,7 @@ export default function HomePage() {
                 in Italia e in Europa
               </h1>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed mb-8 max-w-lg">
-                Calcio, tennis, Formula 1, ciclismo e molto altro. Pacchetti tutto compreso per vivere i grandi eventi sportivi europei con un&apos;organizzazione impeccabile.
+                Calcio, tennis, ciclismo e molto altro. Pacchetti tutto compreso per vivere i grandi eventi sportivi europei con un&apos;organizzazione impeccabile.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
